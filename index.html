@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio - Domingos de Jesus Silva Santos Junior</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        color: #333;
+      }
+      header {
+        background-color: #2c3e50;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+      main {
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      section {
+        margin-bottom: 30px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+      }
+      aside {
+        background-color: #eaeaea;
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      footer {
+        background-color: #2c3e50;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 20px;
+      }
+      form {
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .form-group {
+        margin-bottom: 15px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+      input[type="text"],
+      input[type="password"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      .radio-group,
+      .checkbox-group {
+        margin: 10px 0;
+      }
+      button {
+        background-color: #2c3e50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #1a252f;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Domingos de Jesus Silva Santos Junior</h1>
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre Mim</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+      <!-- Seção Sobre Mim -->
+      <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>
+          Olá! Meu nome é Domingos de Jesus Silva Santos Junior e sou um
+          entusiasta de desenvolvimento web.
+        </p>
+
+        <h3>Minha Jornada</h3>
+        <ol>
+          <li>Início do curso bacharelado em Sistemas de informação (2022)</li>
+          <li>Inicio do curso da escola de programação Incode (2025)</li>
+          <li>Primeiro trabalho como freelancer (2023)</li>
+          <li>Atuando na area de redes (2023~2025)</li>
+        </ol>
+      </section>
+
+      <!-- Seção Habilidades -->
+      <section id="habilidades">
+        <h2>Habilidades</h2>
+        <p>Aqui estão algumas das minhas principais habilidades técnicas:</p>
+
+        <h3>Linguagens e Tecnologias</h3>
+        <ul>
+          <li>HTML e CSS</li>
+          <li>Python</li>
+          <li>Github</li>
+          <li>Redes</li>
+          <li>Sistemas de informação</li>
+        </ul>
+      </section>
+
+      <aside>
+        <h3>Curiosidades</h3>
+        <p>Além de programação, tenho interesse em:</p>
+        <ul>
+          <li>Tecnologia emergente</li>
+          <li>Inteligência Artificial</li>
+          <li>Design de Interface</li>
+          <li>rede infra</li>
+        </ul>
+
+        <p>
+          Visite meu
+          <a href="#">www.linkedin.com/in/domingos-junior-7a5357252</a> para
+          mais informações.
+        </p>
+      </aside>
+
+      <!-- Seção Projetos -->
+      <section id="projetos">
+        <h2>Projetos Recentes</h2>
+        <ul>
+          <li>
+            <h4>Automatização de envio de mensagens whatsapp com python</h4>
+            <p>Criação de chatbot para whatsapp</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contato">
+        <h2>Entre em Contato</h2>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="text" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="senha">Senha (para cadastro):</label>
+            <input type="password" id="senha" name="senha" />
+          </div>
+
+          <div class="form-group">
+            <label>Tipo de Contato:</label>
+            <div class="radio-group">
+              <input
+                type="radio"
+                id="duvida"
+                name="tipo-contato"
+                value="duvida"
+                checked
+              />
+              <label for="duvida">Dúvida</label>
+            </div>
+            <div class="radio-group">
+              <input
+                type="radio"
+                id="proposta"
+                name="tipo-contato"
+                value="proposta"
+              />
+              <label for="proposta">Proposta</label>
+            </div>
+            <div class="radio-group">
+              <input
+                type="radio"
+                id="feedback"
+                name="tipo-contato"
+                value="feedback"
+              />
+              <label for="feedback">Feedback</label>
+            </div>
+          </div>
+
+          <!-- Caixa de seleção -->
+          <div class="form-group">
+            <label>Áreas de Interesse:</label>
+            <div class="checkbox-group">
+              <input
+                type="checkbox"
+                id="frontend"
+                name="interesse"
+                value="frontend"
+              />
+              <label for="frontend">Front-end Development</label>
+            </div>
+            <div class="checkbox-group">
+              <input
+                type="checkbox"
+                id="backend"
+                name="interesse"
+                value="backend"
+              />
+              <label for="backend">Back-end Development</label>
+            </div>
+            <div class="checkbox-group">
+              <input
+                type="checkbox"
+                id="fullstack"
+                name="interesse"
+                value="fullstack"
+              />
+              <label for="fullstack">Full-stack Development</label>
+            </div>
+          </div>
+
+          <!-- Menu de seleção -->
+          <div class="form-group">
+            <label for="horario">Melhor horário para contato:</label>
+            <select id="horario" name="horario">
+              <option value="manha">Manhã (8h-12h)</option>
+              <option value="tarde">Tarde (13h-18h)</option>
+              <option value="noite">Noite (18h-22h)</option>
+            </select>
+          </div>
+
+          <!-- Área de texto -->
+          <div class="form-group">
+            <label for="mensagem">Mensagem:</label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+
+          <!-- Botão de envio -->
+          <button type="submit">Enviar Mensagem</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+      <p>
+        &copy; 2025 Domingos de Jesus Silva Santos Junior. Todos os direitos
+        reservados.
+      </p>
+    </footer>
+  </body>
+</html>
